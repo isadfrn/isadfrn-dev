@@ -15,7 +15,7 @@
 
 ## About
 
-A portfolio page.
+My personal portfolio page.
 
 ![A portfolio page](./client/assets/img/demo.png)
 
