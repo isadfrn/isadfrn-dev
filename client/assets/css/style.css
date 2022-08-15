@@ -1,0 +1,62 @@
+:root {
+  --bkg-gray: #282a36;
+  --text-white: #ffffff;
+  --montserrat: 'Montserrat', sans-serif;
+  --source-code-pro: 'Source Code Pro', monospace;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.landing {
+  background-color: var(--bkg-gray);
+  width: 100%;
+  background-image: url('../img/background.svg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 90%;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.title {
+  word-wrap: break-word;
+  text-align: center;
+  color: var(--text-white);
+}
+
+.title h1 {
+  font-family: var(--montserrat);
+  font-weight: 300;
+  font-size: 1.2rem;
+
+  padding: 1rem 0;
+}
+
+.title h2 {
+  font-family: var(--source-code-pro);
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.title img {
+  position: absolute;
+  bottom: 0;
+  width: 2rem;
+  margin: 1rem 0;
+}
+
+.temp {
+  background-color: var(--bkg-gray);
+}
