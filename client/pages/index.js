@@ -15,8 +15,8 @@ export default function Home() {
       </Head>
       <Main>
         <TitleContainer>
-          <Title>Hey There! I'm Isabella Nunes</Title>
-          <Subtitle>and I'm a Software Engineer</Subtitle>
+          <Title>Hey There! I&apos;m Isabella Nunes</Title>
+          <Subtitle>and I&apos;m a Software Engineer</Subtitle>
         </TitleContainer>
         <Link href="/">
           <Start>
