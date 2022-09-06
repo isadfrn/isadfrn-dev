@@ -18,7 +18,7 @@ export default function Home() {
           <Title>Hey There! I&apos;m Isabella Nunes</Title>
           <Subtitle>and I&apos;m a Software Engineer</Subtitle>
         </TitleContainer>
-        <Link href="/">
+        <Link href="/construction">
           <Start>
             <Image src={arrow} alt="An arrow pointing down" />
           </Start>

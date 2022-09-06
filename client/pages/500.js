@@ -1,4 +1,4 @@
-import { Container } from '../styles/400';
+import { Container } from '../styles/error';
 import { Main, TitleContainer, Title, Subtitle } from '../styles/index';
 
 export default function Custom500() {
