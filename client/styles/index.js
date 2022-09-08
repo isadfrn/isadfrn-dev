@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  background-color: ${({ theme }) => theme.COLORS.BLACK_500};
+  background-color: ${({ theme }) => theme.COLORS.BLACK_600};
   background-image: url(${(props) => props.image.src});
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -45,4 +45,19 @@ export const Start = styled.a`
   bottom: 0;
   width: 2rem;
   margin: 1rem 0;
+
+  animation-duration: 1s;
+  animation-name: move;
+  animation-iteration-count: infinite;
+  transition: all 800ms ease;
+
+  @keyframes move {
+    from {
+      bottom: 0.5rem;
+    }
+
+    to {
+      bottom: 0;
+    }
+  }
 `;

@@ -5,7 +5,7 @@ import background from '../assets/img/main-background.svg';
 import arrow from '../assets/img/arrow-down.svg';
 import { Container, Main, TitleContainer, Title, Subtitle, Start } from '../styles/index';
 
-export default function Home() {
+export default function Landing() {
   return (
     <Container image={background}>
       <Head>
@@ -16,7 +16,7 @@ export default function Home() {
           <Title>Hey There! I&apos;m Isabella Nunes</Title>
           <Subtitle>and I&apos;m a Software Engineer</Subtitle>
         </TitleContainer>
-        <Link href="/construction">
+        <Link href="/about">
           <Start>
             <Image src={arrow} alt="An arrow pointing down" />
           </Start>

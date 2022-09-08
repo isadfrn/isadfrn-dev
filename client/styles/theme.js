@@ -1,7 +1,10 @@
 export default {
   COLORS: {
-    BLACK_500: '#282a36',
+    BLACK_500: '#000000',
+    BLACK_600: '#282a36',
     WHITE_500: '#ffffff',
+    GRAY_500: '#d9d9d9',
+    GRAY_600: '#44475a',
   },
   FONTS: {
     MAIN: "'Montserrat', sans-serif",

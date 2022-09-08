@@ -3,7 +3,7 @@ import { Container } from '../styles/error';
 import { Main, TitleContainer } from '../styles/index';
 import { Title } from '../styles/construction';
 
-export default function Custom404() {
+export default function Construction() {
   return (
     <Container>
       <Head>
