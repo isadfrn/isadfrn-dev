@@ -16,7 +16,7 @@ export default function Landing() {
           <Title>Hey There! I&apos;m Isabella Nunes</Title>
           <Subtitle>and I&apos;m a Software Engineer</Subtitle>
         </TitleContainer>
-        <Link href="/about">
+        <Link href="/construction">
           <Start>
             <Image src={arrow} alt="An arrow pointing down" />
           </Start>

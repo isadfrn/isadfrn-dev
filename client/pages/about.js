@@ -49,7 +49,7 @@ export default function Main() {
 
         <DateWrapper position={50}>
           <Point side="right" />
-          <CardWithDate side="left" year="2014" text="Started graduation in Computer Science" />
+          <CardWithDate side="right" year="2014" text="Started graduation in Computer Science" />
         </DateWrapper>
       </TimelineContainer>
     </Container>

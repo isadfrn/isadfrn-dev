@@ -5,6 +5,7 @@ export default {
     WHITE_500: '#ffffff',
     GRAY_500: '#d9d9d9',
     GRAY_600: '#44475a',
+    YELLOW_500: '#ffb703',
   },
   FONTS: {
     MAIN: "'Montserrat', sans-serif",
