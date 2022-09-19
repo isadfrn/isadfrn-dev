@@ -8,20 +8,6 @@
 
 My personal portfolio page.
 
-## Run
-
-First install all dependencies of client:
-
-```
-npm install
-```
-
-Then run with:
-
-```
-npm run dev
-```
-
 ## Status
 
 Always in progress 🚧
