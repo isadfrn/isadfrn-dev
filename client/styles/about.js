@@ -15,7 +15,7 @@ export const TimelineContainer = styled.div`
 
 export const Line = styled.div`
   width: 0.01rem;
-  height: 300rem;
+  height: 98rem;
   border: 0.01rem dashed ${({ theme }) => theme.COLORS.GRAY_500};
 `;
 
