@@ -1,13 +1,17 @@
 import theme from '../styles/theme';
 import GlobalStyles from '../styles/global';
+import { Menu } from '../components/Menu';
 import { ThemeProvider } from 'styled-components';
 
 function App({ Component, pageProps }) {
   return (
-    <ThemeProvider theme={theme}>
+    <>
       <GlobalStyles />
-      <Component {...pageProps} />
-    </ThemeProvider>
+      <ThemeProvider theme={theme}>
+        <Component {...pageProps} />
+        <Menu />
+      </ThemeProvider>
+    </>
   );
 }
 

@@ -1,13 +1,16 @@
-import { Menu } from '../components/Menu';
+import Head from 'next/head';
 import { Card } from '../components/Card';
 import { Point } from '../components/Point';
 import { CardWithDate } from '../components/CardWithDate';
+import { CardWithImage } from '../components/CardWithImage';
 import { Container, TimelineContainer, Line, DateWrapper } from '../styles/about';
 
 export default function Main() {
   return (
     <Container>
-      <Menu />
+      <Head>
+        <title>Isabella Nunes | Software Engineer</title>
+      </Head>
       <TimelineContainer>
         <Line />
         <Card
@@ -15,8 +18,12 @@ export default function Main() {
           start from the begging, shall we?"
         />
         <DateWrapper position={12}>
-          <CardWithDate side="left" year="1993" text="Where everything starts" />
+          <CardWithDate side="left" year="1993" text="Where everything started" />
           <Point side="left" />
+        </DateWrapper>
+
+        <DateWrapper position={13.5}>
+          <CardWithImage />
         </DateWrapper>
 
         <DateWrapper position={20}>
@@ -37,8 +44,8 @@ export default function Main() {
           <Point side="right" />
           <CardWithDate
             side="right"
-            year="2013"
-            text="In order to run some computer simulations I had to learn Fortran and C, I fell in love with programming "
+            year="2012"
+            text="In order to run some computer simulations I had to learn Fortran and C, I fell in love with programming that year"
           />
         </DateWrapper>
 
@@ -47,9 +54,18 @@ export default function Main() {
           <CardWithDate side="left" year="2014" text="Started graduation in Computer Science" />
         </DateWrapper>
 
-        <DateWrapper position={50}>
+        <DateWrapper position={45}>
+          <Point side="left" />
+          <CardWithDate side="left" year="2016" text="Publish graduation in Computer Science" />
+        </DateWrapper>
+
+        <DateWrapper position={54}>
           <Point side="right" />
-          <CardWithDate side="right" year="2014" text="Started graduation in Computer Science" />
+          <CardWithDate side="right" year="2018" text="I graduated in Computer Science" />
+        </DateWrapper>
+
+        <DateWrapper position={55.5}>
+          <CardWithImage />
         </DateWrapper>
       </TimelineContainer>
     </Container>
