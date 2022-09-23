@@ -138,7 +138,9 @@ export default function Main() {
           />
         </Wrapper>
         <Wrapper position={77.5}>
-          <CardWithIcon image={link} />
+          <a href="http://mtc-m16c.sid.inpe.br/col/sid.inpe.br/mtc-m16c/2017/02.21.20.17/doc/284-289nunes.pdf">
+            <CardWithIcon image={link} />
+          </a>
         </Wrapper>
 
         <Wrapper position={82}>

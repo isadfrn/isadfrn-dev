@@ -5,7 +5,7 @@ export const Container = styled.div`
   background-color: ${({ theme }) => theme.COLORS.GRAY_500};
   font-family: ${({ theme }) => theme.FONTS.MAIN};
   width: 9rem;
-  text-align: justify;
+  text-align: left;
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -40,5 +40,5 @@ export const Date = styled.span`
 
 export const Description = styled.span`
   font-size: 1rem;
-  text-align: justify;
+  text-align: left;
 `;
