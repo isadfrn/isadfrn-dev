@@ -1,4 +1,7 @@
 import Head from 'next/head';
+import photo from '../assets/img/photo.svg';
+import attach from '../assets/img/attach.svg';
+import link from '../assets/img/link.svg';
 import { Card } from '../components/Card';
 import { Point } from '../components/Point';
 import { CardWithDate } from '../components/CardWithDate';
@@ -27,6 +30,10 @@ export default function Main() {
         <DateWrapper position={14}>
           <CardWithDate side="right" year="2000" text="Played my first ever video game" />
           <Point side="right" />
+        </DateWrapper>
+
+        <DateWrapper position={15.5}>
+          <CardWithIcon image={photo} />
         </DateWrapper>
 
         <DateWrapper position={25}>
@@ -76,7 +83,11 @@ export default function Main() {
           />
         </DateWrapper>
 
-        <DateWrapper position={66}>
+        <DateWrapper position={59.5}>
+          <CardWithIcon image={photo} />
+        </DateWrapper>
+
+        <DateWrapper position={68}>
           <Point side="right" />
           <CardWithDate
             side="right"
@@ -85,7 +96,11 @@ export default function Main() {
           />
         </DateWrapper>
 
-        <DateWrapper position={68}>
+        <DateWrapper position={69.5}>
+          <CardWithIcon image={photo} />
+        </DateWrapper>
+
+        <DateWrapper position={70}>
           <Point side="left" />
           <CardWithDate
             side="left"
@@ -94,7 +109,11 @@ export default function Main() {
           />
         </DateWrapper>
 
-        <DateWrapper position={80}>
+        <DateWrapper position={71.5}>
+          <CardWithIcon image={photo} />
+        </DateWrapper>
+
+        <DateWrapper position={82}>
           <Point side="right" />
           <CardWithDate
             side="right"
@@ -103,19 +122,36 @@ export default function Main() {
           />
         </DateWrapper>
 
-        <DateWrapper position={82}>
+        <DateWrapper position={83.5}>
+          <CardWithIcon image={link} />
+        </DateWrapper>
+
+        <DateWrapper position={84}>
           <Point side="left" />
           <CardWithDate side="left" year="2018" text="Graduated in Computer Science" />
         </DateWrapper>
 
-        <DateWrapper position={90}>
+        <DateWrapper position={85.5}>
+          <CardWithIcon image={photo} />
+        </DateWrapper>
+
+        <DateWrapper position={94}>
           <Point side="right" />
           <CardWithDate side="right" year="2021" text="Moved to Santa Catarina state" />
         </DateWrapper>
 
-        {/* <DateWrapper position={55.5}>
-          <CardWithImage />
-        </DateWrapper> */}
+        <DateWrapper position={95.5}>
+          <CardWithIcon image={photo} />
+        </DateWrapper>
+
+        <DateWrapper position={96}>
+          <Point side="left" />
+          <CardWithDate side="left" year="2022" text="Some old habits don't change" />
+        </DateWrapper>
+
+        <DateWrapper position={97.5}>
+          <CardWithIcon image={photo} />
+        </DateWrapper>
       </TimelineContainer>
     </Container>
   );
