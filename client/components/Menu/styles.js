@@ -14,3 +14,11 @@ export const Container = styled.nav`
   bottom: 0;
   z-index: 1;
 `;
+
+export const Tooltip = styled.nav`
+  padding: 0.5rem;
+  background-color: ${({ theme }) => theme.COLORS.WHITE_500};
+
+  position: absolute;
+  bottom: 5rem;
+`;

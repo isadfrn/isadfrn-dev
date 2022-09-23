@@ -39,25 +39,3 @@ export const Subtitle = styled.h2`
   font-weight: 500;
   font-size: 1rem;
 `;
-
-export const Start = styled.a`
-  position: absolute;
-  bottom: 0;
-  width: 2rem;
-  margin: 1rem 0;
-
-  animation-duration: 1s;
-  animation-name: move;
-  animation-iteration-count: infinite;
-  transition: all 800ms ease;
-
-  @keyframes move {
-    from {
-      bottom: 0.5rem;
-    }
-
-    to {
-      bottom: 0;
-    }
-  }
-`;

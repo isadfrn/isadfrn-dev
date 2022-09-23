@@ -1,9 +1,7 @@
-import Image from 'next/image';
 import Head from 'next/head';
-import Link from 'next/link';
 import background from '../assets/img/main-background.svg';
-import arrow from '../assets/img/arrow-down.svg';
-import { Container, Main, TitleContainer, Title, Subtitle, Start } from '../styles/index';
+import { Arrow } from '../components/Arrow';
+import { Container, Main, TitleContainer, Title, Subtitle } from '../styles/index';
 
 export default function Landing() {
   return (
@@ -16,11 +14,7 @@ export default function Landing() {
           <Title>Hey There! I&apos;m Isabella Nunes</Title>
           <Subtitle>and I&apos;m a Software Engineer</Subtitle>
         </TitleContainer>
-        <Link href="/construction">
-          <Start>
-            <Image src={arrow} alt="An arrow pointing down" />
-          </Start>
-        </Link>
+        <Arrow direction="bottom" address="/about" />
       </Main>
     </Container>
   );
