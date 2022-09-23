@@ -14,9 +14,9 @@ export const TimelineContainer = styled.div`
 `;
 
 export const Line = styled.div`
-  width: 0.01rem;
+  width: 1px;
   height: 98rem;
-  border: 0.01rem dashed ${({ theme }) => theme.COLORS.GRAY_500};
+  border: 1px dashed ${({ theme }) => theme.COLORS.GRAY_500};
 `;
 
 export const DateWrapper = styled.div`
