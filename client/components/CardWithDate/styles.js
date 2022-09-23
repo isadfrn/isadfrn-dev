@@ -7,7 +7,6 @@ export const Container = styled.div`
   width: 9rem;
   text-align: justify;
   position: absolute;
-
   display: flex;
   flex-direction: column;
 
@@ -21,7 +20,6 @@ export const Container = styled.div`
 
   @media (min-width: ${({ theme }) => theme.BREAKPOINTS.LAPTOP}px) {
     width: 25rem;
-
     flex-direction: row;
     align-items: center;
     gap: 1rem;

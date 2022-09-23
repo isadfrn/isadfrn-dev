@@ -1,7 +1,8 @@
-import theme from '../styles/theme';
 import GlobalStyles from '../styles/global';
-import { Menu } from '../components/Menu';
+import theme from '../styles/theme';
+
 import { ThemeProvider } from 'styled-components';
+import { Menu } from '../components/Menu';
 
 function App({ Component, pageProps }) {
   return (

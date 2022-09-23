@@ -1,4 +1,5 @@
 import Image from 'next/image';
+
 import { Container } from './styles';
 
 export function CardWithIcon({ image }) {
