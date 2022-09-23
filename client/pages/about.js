@@ -1,20 +1,42 @@
 import Head from 'next/head';
+
 import photo from '../assets/img/photo.svg';
-import attach from '../assets/img/attach.svg';
 import link from '../assets/img/link.svg';
+import start from '../assets/img/start.jpg';
+
+import { useState } from 'react';
+
 import { Card } from '../components/Card';
 import { Point } from '../components/Point';
 import { CardWithDate } from '../components/CardWithDate';
 import { CardWithIcon } from '../components/CardWithIcon';
-import { Container, TimelineContainer, Line, DateWrapper } from '../styles/about';
+import { ImageModal } from '../components/ImageModal';
+
+import { Container, TimelineContainer, Line, Wrapper } from '../styles/about';
 
 export default function Main() {
+  const [openModal, setOpenModal] = useState(false);
+
+  function handleImageModal(image) {
+    return <ImageModal photo={image} closeFunction={handleOpenCloseImageModal} />;
+  }
+
+  function handleOpenCloseImageModal(image) {
+    if (openModal) {
+      setOpenModal(false);
+    } else {
+      setOpenModal(true);
+      handleImageModal(image);
+    }
+  }
+
   return (
     <Container>
       <Head>
         <title>Isabella Nunes | Software Engineer</title>
       </Head>
       <TimelineContainer>
+        {openModal}
         <Line />
 
         <Card
@@ -22,136 +44,136 @@ export default function Main() {
           start from the beggining, shall we?"
         />
 
-        <DateWrapper position={12}>
+        <Wrapper position={12}>
           <CardWithDate side="left" year="1993" text="Where everything started" />
           <Point side="left" />
-        </DateWrapper>
+        </Wrapper>
 
-        <DateWrapper position={14}>
+        <Wrapper position={14}>
           <CardWithDate side="right" year="2000" text="Played my first ever video game" />
           <Point side="right" />
-        </DateWrapper>
+        </Wrapper>
 
-        <DateWrapper position={15.5}>
+        <Wrapper position={15.5} onClick={handleOpenCloseImageModal(start)}>
           <CardWithIcon image={photo} />
-        </DateWrapper>
+        </Wrapper>
 
-        <DateWrapper position={25}>
+        <Wrapper position={25}>
           <Point side="left" />
           <CardWithDate
             side="left"
             year="2004"
             text="Bought my first computer with 256 MB RAM, 40 GB of disk, a Intel Celeron D 315, and Windows XP Starter Edition"
           />
-        </DateWrapper>
+        </Wrapper>
 
-        <DateWrapper position={28}>
+        <Wrapper position={28}>
           <Point side="right" />
           <CardWithDate side="right" year="2011" text="Started graduation in Physics" />
-        </DateWrapper>
+        </Wrapper>
 
-        <DateWrapper position={38}>
+        <Wrapper position={38}>
           <Point side="left" />
           <CardWithDate side="left" year="2012" text="Used Linux for the first time" />
-        </DateWrapper>
+        </Wrapper>
 
-        <DateWrapper position={41}>
+        <Wrapper position={41}>
           <Point side="right" />
           <CardWithDate
             side="right"
             year="2013"
             text="In order to run some computer simulations I had to learn Fortran and C"
           />
-        </DateWrapper>
+        </Wrapper>
 
-        <DateWrapper position={48}>
+        <Wrapper position={48}>
           <Point side="left" />
           <CardWithDate side="left" year="2014" text="Started graduation in Computer Science" />
-        </DateWrapper>
+        </Wrapper>
 
-        <DateWrapper position={52}>
+        <Wrapper position={52}>
           <Point side="right" />
           <CardWithDate side="right" year="2014" text="Got my first Full-stack job" />
-        </DateWrapper>
+        </Wrapper>
 
-        <DateWrapper position={58}>
+        <Wrapper position={58}>
           <Point side="left" />
           <CardWithDate
             side="left"
             year="2015"
             text="Published my first article in a national event"
           />
-        </DateWrapper>
+        </Wrapper>
 
-        <DateWrapper position={59.5}>
+        <Wrapper position={59.5}>
           <CardWithIcon image={photo} />
-        </DateWrapper>
+        </Wrapper>
 
-        <DateWrapper position={68}>
+        <Wrapper position={68}>
           <Point side="right" />
           <CardWithDate
             side="right"
             year="2015"
             text="Got my first job as a coding instructor at Senac the main agent of professional education in Brazil"
           />
-        </DateWrapper>
+        </Wrapper>
 
-        <DateWrapper position={69.5}>
+        <Wrapper position={69.5}>
           <CardWithIcon image={photo} />
-        </DateWrapper>
+        </Wrapper>
 
-        <DateWrapper position={70}>
+        <Wrapper position={70}>
           <Point side="left" />
           <CardWithDate
             side="left"
             year="2017"
             text="Published my first article in a national event"
           />
-        </DateWrapper>
+        </Wrapper>
 
-        <DateWrapper position={71.5}>
+        <Wrapper position={71.5}>
           <CardWithIcon image={photo} />
-        </DateWrapper>
+        </Wrapper>
 
-        <DateWrapper position={82}>
+        <Wrapper position={82}>
           <Point side="right" />
           <CardWithDate
             side="right"
             year="2018"
             text="Published my first article in a internatinoal event"
           />
-        </DateWrapper>
+        </Wrapper>
 
-        <DateWrapper position={83.5}>
+        <Wrapper position={83.5}>
           <CardWithIcon image={link} />
-        </DateWrapper>
+        </Wrapper>
 
-        <DateWrapper position={84}>
+        <Wrapper position={84}>
           <Point side="left" />
           <CardWithDate side="left" year="2018" text="Graduated in Computer Science" />
-        </DateWrapper>
+        </Wrapper>
 
-        <DateWrapper position={85.5}>
+        <Wrapper position={85.5}>
           <CardWithIcon image={photo} />
-        </DateWrapper>
+        </Wrapper>
 
-        <DateWrapper position={94}>
+        <Wrapper position={94}>
           <Point side="right" />
           <CardWithDate side="right" year="2021" text="Moved to Santa Catarina state" />
-        </DateWrapper>
+        </Wrapper>
 
-        <DateWrapper position={95.5}>
+        <Wrapper position={95.5}>
           <CardWithIcon image={photo} />
-        </DateWrapper>
+        </Wrapper>
 
-        <DateWrapper position={96}>
+        <Wrapper position={96}>
           <Point side="left" />
           <CardWithDate side="left" year="2022" text="Some old habits don't change" />
-        </DateWrapper>
+        </Wrapper>
 
-        <DateWrapper position={97.5}>
+        <Wrapper position={97.5}>
           <CardWithIcon image={photo} />
-        </DateWrapper>
+        </Wrapper>
       </TimelineContainer>
     </Container>
   );

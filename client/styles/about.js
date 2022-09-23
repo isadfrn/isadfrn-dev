@@ -19,7 +19,7 @@ export const Line = styled.div`
   border: 1px dashed ${({ theme }) => theme.COLORS.GRAY_500};
 `;
 
-export const DateWrapper = styled.div`
+export const Wrapper = styled.div`
   position: absolute;
   top: ${(props) => props.position}rem;
 
