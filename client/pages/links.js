@@ -1,4 +1,5 @@
 import Head from 'next/head';
+
 import { Container } from '../styles/error';
 import { Main, TitleContainer } from '../styles/index';
 import { Title } from '../styles/construction';

@@ -1,8 +1,7 @@
 import Head from 'next/head';
 
-import photo from '../assets/img/photo.svg';
-import link from '../assets/img/link.svg';
-import start from '../assets/img/start.jpg';
+import photo from '../assets/icons/photo.svg';
+import link from '../assets/icons/link.svg';
 
 import { useState } from 'react';
 
@@ -10,33 +9,16 @@ import { Card } from '../components/Card';
 import { Point } from '../components/Point';
 import { CardWithDate } from '../components/CardWithDate';
 import { CardWithIcon } from '../components/CardWithIcon';
-import { ImageModal } from '../components/ImageModal';
 
 import { Container, TimelineContainer, Line, Wrapper } from '../styles/about';
 
 export default function Main() {
-  const [openModal, setOpenModal] = useState(false);
-
-  function handleImageModal(image) {
-    return <ImageModal photo={image} closeFunction={handleOpenCloseImageModal} />;
-  }
-
-  function handleOpenCloseImageModal(image) {
-    if (openModal) {
-      setOpenModal(false);
-    } else {
-      setOpenModal(true);
-      handleImageModal(image);
-    }
-  }
-
   return (
     <Container>
       <Head>
         <title>Isabella Nunes | Software Engineer</title>
       </Head>
       <TimelineContainer>
-        {openModal}
         <Line />
 
         <Card
@@ -48,17 +30,19 @@ export default function Main() {
           <CardWithDate side="left" year="1993" text="Where everything started" />
           <Point side="left" />
         </Wrapper>
+        <Wrapper position={13.5}>
+          <CardWithIcon image={photo} />
+        </Wrapper>
 
         <Wrapper position={14}>
           <CardWithDate side="right" year="2000" text="Played my first ever video game" />
           <Point side="right" />
         </Wrapper>
-
-        <Wrapper position={15.5} onClick={handleOpenCloseImageModal(start)}>
+        <Wrapper position={15.5}>
           <CardWithIcon image={photo} />
         </Wrapper>
 
-        <Wrapper position={25}>
+        <Wrapper position={26}>
           <Point side="left" />
           <CardWithDate
             side="left"
@@ -72,12 +56,12 @@ export default function Main() {
           <CardWithDate side="right" year="2011" text="Started graduation in Physics" />
         </Wrapper>
 
-        <Wrapper position={38}>
+        <Wrapper position={40}>
           <Point side="left" />
           <CardWithDate side="left" year="2012" text="Used Linux for the first time" />
         </Wrapper>
 
-        <Wrapper position={41}>
+        <Wrapper position={42}>
           <Point side="right" />
           <CardWithDate
             side="right"
@@ -86,17 +70,17 @@ export default function Main() {
           />
         </Wrapper>
 
-        <Wrapper position={48}>
+        <Wrapper position={52}>
           <Point side="left" />
           <CardWithDate side="left" year="2014" text="Started graduation in Computer Science" />
         </Wrapper>
 
-        <Wrapper position={52}>
+        <Wrapper position={54}>
           <Point side="right" />
           <CardWithDate side="right" year="2014" text="Got my first Full-stack job" />
         </Wrapper>
 
-        <Wrapper position={58}>
+        <Wrapper position={64}>
           <Point side="left" />
           <CardWithDate
             side="left"
@@ -104,8 +88,7 @@ export default function Main() {
             text="Published my first article in a national event"
           />
         </Wrapper>
-
-        <Wrapper position={59.5}>
+        <Wrapper position={65.5}>
           <CardWithIcon image={photo} />
         </Wrapper>
 
@@ -117,60 +100,42 @@ export default function Main() {
             text="Got my first job as a coding instructor at Senac the main agent of professional education in Brazil"
           />
         </Wrapper>
-
         <Wrapper position={69.5}>
           <CardWithIcon image={photo} />
         </Wrapper>
 
-        <Wrapper position={70}>
+        <Wrapper position={76}>
           <Point side="left" />
           <CardWithDate
             side="left"
-            year="2017"
-            text="Published my first article in a national event"
+            year="2016"
+            text="Published my first article in a international event"
           />
         </Wrapper>
-
-        <Wrapper position={71.5}>
-          <CardWithIcon image={photo} />
-        </Wrapper>
-
-        <Wrapper position={82}>
-          <Point side="right" />
-          <CardWithDate
-            side="right"
-            year="2018"
-            text="Published my first article in a internatinoal event"
-          />
-        </Wrapper>
-
-        <Wrapper position={83.5}>
+        <Wrapper position={77.5}>
           <CardWithIcon image={link} />
         </Wrapper>
 
         <Wrapper position={84}>
-          <Point side="left" />
-          <CardWithDate side="left" year="2018" text="Graduated in Computer Science" />
+          <Point side="right" />
+          <CardWithDate side="right" year="2018" text="Graduated in Computer Science" />
         </Wrapper>
-
         <Wrapper position={85.5}>
           <CardWithIcon image={photo} />
         </Wrapper>
 
-        <Wrapper position={94}>
-          <Point side="right" />
-          <CardWithDate side="right" year="2021" text="Moved to Santa Catarina state" />
+        <Wrapper position={90}>
+          <Point side="left" />
+          <CardWithDate side="left" year="2021" text="Moved to Santa Catarina state" />
         </Wrapper>
-
-        <Wrapper position={95.5}>
+        <Wrapper position={91.5}>
           <CardWithIcon image={photo} />
         </Wrapper>
 
         <Wrapper position={96}>
-          <Point side="left" />
-          <CardWithDate side="left" year="2022" text="Some old habits don't change" />
+          <Point side="right" />
+          <CardWithDate side="right" year="2022" text="Some old habits don't change" />
         </Wrapper>
-
         <Wrapper position={97.5}>
           <CardWithIcon image={photo} />
         </Wrapper>

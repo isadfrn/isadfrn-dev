@@ -1,12 +1,14 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import about from '../../assets/img/about.svg';
-import portfolio from '../../assets/img/portfolio.svg';
-import blog from '../../assets/img/blog.svg';
-import study from '../../assets/img/study.svg';
-import cv from '../../assets/img/cv.svg';
-import links from '../../assets/img/links.svg';
-import arrow from '../../assets/img/arrow.svg';
+
+import about from '../../assets/icons/about.svg';
+import portfolio from '../../assets/icons/portfolio.svg';
+import blog from '../../assets/icons/blog.svg';
+import study from '../../assets/icons/study.svg';
+import cv from '../../assets/icons/cv.svg';
+import links from '../../assets/icons/links.svg';
+import arrow from '../../assets/icons/arrow.svg';
+
 import { Container } from './styles';
 
 export function Menu() {

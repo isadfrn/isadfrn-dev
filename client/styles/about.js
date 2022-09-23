@@ -9,7 +9,6 @@ export const TimelineContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-
   padding: 2rem;
 `;
 
@@ -22,7 +21,6 @@ export const Line = styled.div`
 export const Wrapper = styled.div`
   position: absolute;
   top: ${(props) => props.position}rem;
-
   display: flex;
   align-items: center;
 

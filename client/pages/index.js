@@ -1,5 +1,7 @@
 import Head from 'next/head';
-import background from '../assets/img/main-background.svg';
+
+import background from '../assets/img/background.svg';
+
 import { Container, Main, TitleContainer, Title, Subtitle } from '../styles/index';
 
 export default function Landing() {
