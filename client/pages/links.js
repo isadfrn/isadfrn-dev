@@ -7,8 +7,9 @@ import twitter from '../assets/icons/twitter.svg';
 import youtube from '../assets/icons/youtube.svg';
 
 import { Container } from '../styles/error';
-import { Main } from '../styles/index';
-import { IconsContainer } from '../styles/links';
+import { Main, TitleContainer } from '../styles/index';
+import { Title } from '../styles/construction';
+import { LinksContainer, IconsContainer } from '../styles/links';
 
 import { LinkWithIcon } from '../components/LinkWithIcon';
 
@@ -19,25 +20,30 @@ export default function Links() {
         <title>Isabella Nunes | Software Engineer</title>
       </Head>
       <Main>
-        <IconsContainer>
-          <LinkWithIcon icon={github} title="GitHub" url="https://github.com/isadfrn" />
-          <LinkWithIcon
-            icon={instagram}
-            title="Instagram"
-            url="https://www.instagram.com/isadfrn/"
-          />
-          <LinkWithIcon
-            icon={linkedin}
-            title="LinkedIn"
-            url="https://www.linkedin.com/in/isadfrn/"
-          />
-          <LinkWithIcon icon={twitter} title="Twitter" url="https://twitter.com/isadfrn" />
-          <LinkWithIcon
-            icon={youtube}
-            title="YouTube"
-            url="https://www.youtube.com/channel/UCgCWh9ELWp38Yu1PTU6rcSA"
-          />
-        </IconsContainer>
+        <LinksContainer>
+          <TitleContainer>
+            <Title>Connect with me</Title>
+          </TitleContainer>
+          <IconsContainer>
+            <LinkWithIcon icon={github} title="GitHub" url="https://github.com/isadfrn" />
+            <LinkWithIcon
+              icon={instagram}
+              title="Instagram"
+              url="https://www.instagram.com/isadfrn/"
+            />
+            <LinkWithIcon
+              icon={linkedin}
+              title="LinkedIn"
+              url="https://www.linkedin.com/in/isadfrn/"
+            />
+            <LinkWithIcon icon={twitter} title="Twitter" url="https://twitter.com/isadfrn" />
+            <LinkWithIcon
+              icon={youtube}
+              title="YouTube"
+              url="https://www.youtube.com/channel/UCgCWh9ELWp38Yu1PTU6rcSA"
+            />
+          </IconsContainer>
+        </LinksContainer>
       </Main>
     </Container>
   );

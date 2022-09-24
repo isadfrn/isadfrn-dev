@@ -47,7 +47,7 @@ export default function Main() {
         <Line />
 
         <Card
-          text="Hey there! If you're here, you probably want to know more about me right? Well, let's
+          text="Hey there! If you're here, you probably want to know more about me, right? Well, let's
           start from the beggining, shall we?"
         />
 

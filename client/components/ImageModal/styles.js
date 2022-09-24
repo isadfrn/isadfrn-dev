@@ -20,4 +20,11 @@ export const Container = styled.div`
     color: ${({ theme }) => theme.COLORS.WHITE_500};
     font-size: 1.5rem;
   }
+
+  @media (min-width: ${({ theme }) => theme.BREAKPOINTS.LAPTOP}px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 `;
