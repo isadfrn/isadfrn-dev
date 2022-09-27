@@ -33,7 +33,7 @@ export function CardEducation({
           {tags && (
             <TagArea>
               {tags.map((item) => (
-                <LanguageTag key={item.name} title={item.name} image={item.image} />
+                <LanguageTag key={item.name} title={item.name} />
               ))}
             </TagArea>
           )}

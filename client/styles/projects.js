@@ -11,11 +11,11 @@ export const Main = styled.div`
   gap: 1rem;
 `;
 
-export const EducationContainer = styled.div`
+export const ProjectsContainer = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 2rem;
 
   @media (min-width: ${({ theme }) => theme.BREAKPOINTS.LAPTOP}px) {
     display: grid;
