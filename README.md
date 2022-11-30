@@ -4,13 +4,15 @@
 ![Repository size](https://img.shields.io/github/repo-size/isadfrn/isadfrn-dev?style=flat-square)
 ![Last commit](https://img.shields.io/github/last-commit/isadfrn/isadfrn-dev?style=flat-square)
 
+![](./client/assets/img/demo.gif)
+
 ## About
 
 My personal portfolio page.
 
 ## Status
 
-Always in progress 🚧
+Maintaining ✅
 
 ## License
 
